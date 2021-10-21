@@ -48,11 +48,27 @@ namespace AspNetCore.Mobile.Droid
 
             Task.Run(() =>
             {
-                var host = Program.CreateWebHostBuilder(new string[0], PlatformLoggerProvider.Instance)
-                  .Build();
-                this.host = new AndroidWebHost(host, WriteLine);
-                this.host.RunCompat();
+                try
+                {
+                    var host = Program.CreateWebHostBuilder(new string[0], PlatformLoggerProvider.Instance)
+                      .Build();
+                    this.host = new AndroidWebHost(host, WriteLine);
+                    this.host.RunCompat();
+                }
+                catch (Exception e)
+                {
+                    WriteLine(e.ToString());
+                }
             });
+        }
+
+        protected override void OnDestroy()
+        {
+            host?.Dispose();
+            host = null;
+            tvConsole = null;
+            btnOpenBrowser = null;
+            base.OnDestroy();
         }
 
         void WriteLine(string value)
