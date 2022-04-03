@@ -7,13 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Mobile", "src\As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Mobile.Droid", "src\AspNetCore.Mobile.Droid\AspNetCore.Mobile.Droid.csproj", "{2FDDE806-4955-4139-A0D3-C01969176FC9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET Core 2.2", "ASP.NET Core 2.2", "{61F88394-1E65-4D36-B536-C80769449920}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Root", "_Root", "{97FCE264-CEFC-48A5-BDDD-5C1873AB0043}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		README.md = README.md
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET Core 6.0", "ASP.NET Core 6.0", "{F386F485-9396-4035-89BE-8B4276EFCA59}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore6.Mobile", "src\AspNetCore6.Mobile\AspNetCore6.Mobile.csproj", "{CB530398-AFB7-4B2D-B08E-B2BEFEB594FF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore6.Mobile.Maui", "src\AspNetCore6.Mobile.Maui\AspNetCore6.Mobile.Maui.csproj", "{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Mobile.Droid.NET6", "src\AspNetCore.Mobile.Droid.NET6\AspNetCore.Mobile.Droid.NET6.csproj", "{95F5DBF0-57C6-4806-9FBD-533E82206293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,24 +32,13 @@ Global
 		{2FDDE806-4955-4139-A0D3-C01969176FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FDDE806-4955-4139-A0D3-C01969176FC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2FDDE806-4955-4139-A0D3-C01969176FC9}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{CB530398-AFB7-4B2D-B08E-B2BEFEB594FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB530398-AFB7-4B2D-B08E-B2BEFEB594FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB530398-AFB7-4B2D-B08E-B2BEFEB594FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB530398-AFB7-4B2D-B08E-B2BEFEB594FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F5DBF0-57C6-4806-9FBD-533E82206293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F5DBF0-57C6-4806-9FBD-533E82206293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F5DBF0-57C6-4806-9FBD-533E82206293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F5DBF0-57C6-4806-9FBD-533E82206293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DE97ADCA-B043-4659-81FA-A4C4E09886F4} = {61F88394-1E65-4D36-B536-C80769449920}
-		{2FDDE806-4955-4139-A0D3-C01969176FC9} = {61F88394-1E65-4D36-B536-C80769449920}
-		{CB530398-AFB7-4B2D-B08E-B2BEFEB594FF} = {F386F485-9396-4035-89BE-8B4276EFCA59}
-		{23CDC6F5-24B9-42D4-9CF1-BF66E49EB03D} = {F386F485-9396-4035-89BE-8B4276EFCA59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0235E4C1-5E8A-4B66-8EFC-F2C1358A926C}

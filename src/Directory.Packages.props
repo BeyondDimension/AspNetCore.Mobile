@@ -1,0 +1,13 @@
+<Project>
+	<ItemGroup>
+    	<PackageVersion Include="Microsoft.AspNetCore" Version="2.2.0" />
+    	<PackageVersion Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    	<PackageVersion Include="Microsoft.AspNetCore.CookiePolicy" Version="2.2.8" />
+    	<PackageVersion Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    	<PackageVersion Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    	<PackageVersion Include="OperatingSystem2" Version="1.4.3" />
+		<PackageVersion Include="Xamarin.AndroidX.AppCompat" Version="1.4.1" />
+		<PackageVersion Include="Xamarin.Google.Android.Material" Version="1.5.0.1" />
+		<PackageVersion Include="Xamarin.Essentials" Version="1.7.1" />
+	</ItemGroup>
+</Project>

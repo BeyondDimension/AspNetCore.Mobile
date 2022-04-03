@@ -12,7 +12,7 @@ namespace AspNetCore.Mobile.Controllers
 {
     public class HomeController : Controller
     {
-        static string GetAssemblyVersion(Assembly assembly)
+        static string? GetAssemblyVersion(Assembly assembly)
            => assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
            .InformationalVersion
            .Split(new[] { '+' }, StringSplitOptions.RemoveEmptyEntries)
@@ -27,8 +27,7 @@ namespace AspNetCore.Mobile.Controllers
 
         public IActionResult Index()
         {
-            return Content($"<h1>OK!</h1><br/><h2>AspNetCore Version: {GetAssemblyVersion(typeof(Controller).Assembly)}</h2><br/><h3>ProcessArch: {RuntimeInformation.ProcessArchitecture}</h3><br/><h3>OSArch: {RuntimeInformation.OSArchitecture}</h3><br/><h3>EnvOSVerPlatform: {Environment.OSVersion.Platform}</h3><br/><h3>IsWindows: {OperatingSystem2.IsWindows}</h3><br/><h3>IsAndroid: {IsAndroid}</h3>", "text/html");
-            //return View();
+            return Content($"<h1>OK!</h1><br/><h2>AspNetCore Version: {GetAssemblyVersion(typeof(Controller).Assembly)}</h2><br/><h3>EnvVer: {Environment.Version}</h3><br/><h3>ProcessArch: {RuntimeInformation.ProcessArchitecture}</h3><br/><h3>OSArch: {RuntimeInformation.OSArchitecture}</h3><br/><h3>EnvOSVerPlatform: {Environment.OSVersion.Platform}</h3><br/><h3>IsWindows: {OperatingSystem2.IsWindows}</h3><br/><h3>IsAndroid: {IsAndroid}</h3>", "text/html");
         }
 
         public IActionResult About()

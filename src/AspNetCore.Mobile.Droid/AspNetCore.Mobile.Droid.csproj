@@ -19,14 +19,15 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
-    <AndroidNdkDirectory>H:\Android\android-sdk\ndk\22.1.7171670</AndroidNdkDirectory>
+    <AndroidNdkDirectory Condition=" '$(OS)' == 'Windows_NT' And Exists('H:\Android\android-sdk\ndk\22.1.7171670\ndk-build.cmd') ">H:\Android\android-sdk\ndk\22.1.7171670</AndroidNdkDirectory>
+    <AndroidNdkDirectory Condition=" '$(OS)' == 'Windows_NT' And Exists('C:\Program Files (x86)\Android\android-sdk\ndk\22.1.7171670\ndk-build.cmd') ">C:\Program Files (x86)\Android\android-sdk\ndk\22.1.7171670</AndroidNdkDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -120,9 +121,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.3.1.3" />
-    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.4.0.4" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" />
+    <PackageReference Include="Xamarin.Google.Android.Material" />
+    <PackageReference Include="Xamarin.Essentials" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AspNetCore.Mobile\AspNetCore.Mobile.csproj">
