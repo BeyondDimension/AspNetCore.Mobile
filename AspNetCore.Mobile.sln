@@ -9,12 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Mobile.Droid", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Root", "_Root", "{97FCE264-CEFC-48A5-BDDD-5C1873AB0043}"
 	ProjectSection(SolutionItems) = preProject
-		Directory.Build.props = Directory.Build.props
-		Directory.Packages.props = Directory.Packages.props
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Packages.props = src\Directory.Packages.props
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Mobile.Droid.NET6", "src\AspNetCore.Mobile.Droid.NET6\AspNetCore.Mobile.Droid.NET6.csproj", "{95F5DBF0-57C6-4806-9FBD-533E82206293}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Mobile.Droid.NET6", "src\AspNetCore.Mobile.Droid.NET6\AspNetCore.Mobile.Droid.NET6.csproj", "{95F5DBF0-57C6-4806-9FBD-533E82206293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
