@@ -15,6 +15,8 @@ using Xamarin.Essentials;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 using XEPlatform = Xamarin.Essentials.Platform;
 using Environment = System.Environment;
+using Xamarin.Google.MLKit.Vision.BarCode;
+using Xamarin.Google.MLKit.Vision.Common;
 
 namespace AspNetCore.Mobile.Droid
 {
@@ -114,5 +116,15 @@ namespace AspNetCore.Mobile.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+#if NET6_0_OR_GREATER
+        public override string ToString()
+        {
+            var options = new BarcodeScannerOptions.Builder()
+                      .SetBarcodeFormats(Barcode.FormatQrCode)
+                      .Build();
+            return BarcodeScanning.GetClient(options).ToString();
+        }
+#endif
     }
 }

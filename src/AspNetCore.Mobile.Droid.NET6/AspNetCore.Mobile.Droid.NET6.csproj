@@ -49,16 +49,51 @@
     <AndroidResource Include="..\AspNetCore.Mobile.Droid\Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" Link="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="..\AspNetCore.Mobile.Droid\Resources\mipmap-xxxhdpi\ic_launcher_round.png" Link="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
-	
-  <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" />
-    <PackageReference Include="Xamarin.Google.Android.Material" />
-    <PackageReference Include="Xamarin.Essentials" />
-    <PackageReference Include="Microsoft.AspNetCore" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" />
-    <PackageReference Include="Microsoft.AspNetCore.CookiePolicy" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" />
-    <PackageReference Include="OperatingSystem2" />
-  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xamarin.AndroidX.AppCompat" />
+		<PackageReference Include="Xamarin.Google.Android.Material" />
+		<PackageReference Include="Xamarin.Essentials" />
+		<PackageReference Include="Microsoft.AspNetCore" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" />
+		<PackageReference Include="Microsoft.AspNetCore.CookiePolicy" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc" />
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" />
+		<PackageReference Include="OperatingSystem2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="XAB.FlexboxLayout" />
+		<PackageReference Include="de.hdodenhof.circleimageview" />
+		<PackageReference Include="Xamarin.AndroidX.AppCompat" />
+		<PackageReference Include="Xamarin.AndroidX.SwipeRefreshLayout" />
+		<PackageReference Include="Xamarin.Google.Android.Material" />
+		<PackageReference Include="Xamarin.AndroidX.ConstraintLayout" />
+		<PackageReference Include="Xamarin.AndroidX.Navigation.Fragment" />
+		<PackageReference Include="Xamarin.AndroidX.Navigation.UI" />
+		<PackageReference Include="Xamarin.AndroidX.RecyclerView" />
+		<PackageReference Include="Xamarin.AndroidX.ViewPager2" />
+		<!--dependencies implementation-->
+		<PackageReference Include="Microsoft.AppCenter" />
+		<PackageReference Include="Microsoft.AppCenter.Analytics" />
+		<PackageReference Include="Microsoft.AppCenter.Crashes" />
+		<PackageReference Include="ReactiveUI.AndroidX" />
+		<PackageReference Include="Square.OkHttp3" />
+		<PackageReference Include="Square.Picasso" />
+		<PackageReference Include="Xamarin.AndroidX.Activity" />
+		<PackageReference Include="Xamarin.AndroidX.Biometric" />
+		<PackageReference Include="Xamarin.AndroidX.ExifInterface" />
+		<PackageReference Include="Xamarin.AndroidX.Fragment" />
+		<!--<PackageReference Include="Xamarin.AndroidX.Migration" />-->
+		
+		<PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.UI" />
+		<PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" />
+		<PackageReference Include="Xamarin.AndroidX.Camera.Camera2" />
+		<PackageReference Include="Xamarin.AndroidX.Camera.View" />
+		<PackageReference Include="Xamarin.AndroidX.Camera.Lifecycle" />
+		
+		<PackageReference Include="Xamarin.Google.Dagger" />
+		<PackageReference Include="Xamarin.Google.MLKit.BarcodeScanning" />
+		<PackageReference Include="Xamarin.Build.Download" />
+	</ItemGroup>
 </Project>
