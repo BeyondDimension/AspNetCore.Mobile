@@ -15,8 +15,10 @@ using Xamarin.Essentials;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 using XEPlatform = Xamarin.Essentials.Platform;
 using Environment = System.Environment;
+#if NET6_0_OR_GREATER
 using Xamarin.Google.MLKit.Vision.BarCode;
 using Xamarin.Google.MLKit.Vision.Common;
+#endif
 
 namespace AspNetCore.Mobile.Droid
 {
