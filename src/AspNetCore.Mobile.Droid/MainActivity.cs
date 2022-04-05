@@ -46,6 +46,22 @@ namespace AspNetCore.Mobile.Droid
                 await Browser.OpenAsync("http://localhost:5000");
             };
 
+            TestProcessStartTime();
+            void TestProcessStartTime()
+            {
+                string startTimeString;
+                try
+                {
+                    var p = global::System.Diagnostics.Process.GetCurrentProcess();
+                    startTimeString = p.StartTime.ToString();
+                }
+                catch (Exception e)
+                {
+                    startTimeString = e.ToString();
+                }
+                WriteLine($"StartTime: {startTimeString}");
+            }
+
             Task.Run(() =>
             {
                 try
